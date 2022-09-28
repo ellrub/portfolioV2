@@ -51,19 +51,19 @@
         flex-direction: column;
         margin: 2rem;
         padding: 1rem;
-        border-radius: 0.5rem;
         background-color: #fff;
         color: #000;
+
+        border-radius: 0.5rem;
+        background: #18192a;
+        box-shadow: 8px 8px 9px #10111c,
+                    -8px -8px 9px #202238;
 
         cursor: pointer;
         transition: all 0.3s ease;
 
-        &:hover {
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-        }
-
         @media screen and (min-width: 2000px) {
-            width: 470px;
+            width: 400px;
             padding: 1.25rem;
             border-radius: 0.75rem;
         }
@@ -107,6 +107,11 @@
 
     border-radius: 0.5rem;
     opacity: 0;
+
+    @media screen and (max-width: 950px) {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
     
 
     div {
@@ -139,13 +144,45 @@
     h4 {
         margin-top: 1rem;
         line-height: 1.5;
+        color: var(--light-blue);
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        color: var(--light-color);
+        font-size: 0.8rem;
+        letter-spacing: 0.04rem;
+        
+        @media screen and (min-width: 2000px) {
+            font-size: 1rem;
+        }
     }
 
     .app__work-tag {
         position: absolute;
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        background-color: #fff;
+        background-color: #18192a;
         top: -25px;
+    }
+}
+
+.app__work-head {
+    background: -webkit-linear-gradient(30deg, #12c2e9, #c471ed, #f64f59, rgb(199, 219, 14));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7rem;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 3.5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 4.5rem;
     }
 }

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {HiMenuAlt4, HiX} from "react-icons/hi";
+import {HiMenu, HiX} from "react-icons/hi";
 import {motion} from "framer-motion";
 
 import "./Navbar.scss";
@@ -10,9 +10,9 @@ const [toggle, setToggle] = useState(false)
     return (
     <nav className='app__navbar'>
         <div className='app__navbar-logo'>
-            <i class="fa-solid fa-r"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-e"></i>
+            <i className="fa-solid fa-r"></i>
+            <i className="fa-solid fa-circle"></i>
+            <i className="fa-solid fa-e"></i>
         </div>
         <ul className='app__navbar-links'>
             {["home", "about", "work", "skills", "contact"].map((item) => (
@@ -23,7 +23,7 @@ const [toggle, setToggle] = useState(false)
             ))}
         </ul>
         <div className='app__navbar-menu'>
-            <HiMenuAlt4 onClick={() => setToggle(true)} />
+            <HiMenu onClick={() => setToggle(true)} />
 
             {toggle && (
                 <motion.div
