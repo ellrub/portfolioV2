@@ -27,12 +27,12 @@ const [toggle, setToggle] = useState(false)
 
             {toggle && (
                 <motion.div
-                    whileInView={{x: [300, 0]}}
+                    whileInView={{x: [200, 0]}}
                     transition={{duration: 0.85, ease: "easeOut"}}
                 >
                     <HiX onClick={() => setToggle(false)} />
                     <ul>
-                        {["home", "about", "work", "skills", "contact"].map((item) => (
+                        {["home", "about", "projects", "skills", "contact"].map((item) => (
                         <li key={item}>
                             <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                         </li>
