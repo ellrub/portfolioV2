@@ -21,8 +21,8 @@
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;    /*<--- Change to flex-start when adding experience*/
+    align-items: center;        /*<--- Change to flex-start when adding experience*/
 
     margin-right: 5rem;
 
@@ -165,17 +165,5 @@
         font-size: 1.75rem !important;
         max-width: 500px !important;
         line-height: 2 !important;
-    }
-}
-
-.app__skills-head {
-    background: -webkit-linear-gradient(30deg, #12c2e9, #c471ed, #f64f59, rgb(199, 219, 14));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-size: 1.8rem;
-
-    @media screen and (min-width: 2000px) {
-        font-size: 4rem;
     }
 }

@@ -37,15 +37,15 @@ const handleSubmit = () => {
 
     return (
     <>
-        <h2 className='head-text'>Take a coffe and chat with me</h2>
+        <h2 className='app__headline-text'>I would love to work with you</h2>
         <div className='app__footer-cards'>
             <div className='app__footer-card'> 
                 <img src={images.email} alt="email" />
-                <a href="mailto:hello@ruben.com" className='p-text'>hello@ruben.com</a>
+                <a href="mailto:ellefsen88@gmail.com" className='p-text'>ellefsen88@gmail.com</a>
             </div>
             <div className='app__footer-card'> 
                 <img src={images.mobile} alt="mobile" />
-                <a href="tel: +1 (123) 456-789" className='p-text'>+1 (123) 456-789</a>
+                <a href="tel: +47 478 24 478" className='p-text'>+47 478 24 478</a>
             </div>
         </div>
 
@@ -84,7 +84,7 @@ const handleSubmit = () => {
             >{loading ? "Sending" : "Send Message"}</button>
         </div>
         : <div>
-            <h3 className='head-text'>Thank you for getting in touch</h3>
+            <h3 className='app__footer-sub'>Thank you for getting in touch</h3>
         </div>}
     </>
 )

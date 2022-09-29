@@ -59,25 +59,3 @@
     letter-spacing: 0.05rem;
     font-weight: 200;
 }
-
-.app__about-name { 
-    background: -webkit-linear-gradient(30deg, #12c2e9, #c471ed, #f64f59, rgb(199, 219, 14));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: 0.036rem;
-    margin-bottom: 0;
-    width: 20rem;
-    text-align: center;
-
-    @media screen and (min-width: 2000px) {
-        font-size: 4rem;
-        width: 20rem;
-    }
-
-    @media screen and (max-width: 450px) {
-        font-size: 2.7rem;
-        width: 14rem;
-    }
-}

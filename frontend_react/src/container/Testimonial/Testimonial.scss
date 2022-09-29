@@ -10,8 +10,13 @@
     background-color: var(--white-color);
     display: flex;
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    
+    
+    border-radius: 0.5rem;
+    background: #18192a;
+    box-shadow: 8px 8px 9px #10111c,
+                -8px -8px 9px #202238;
+    
 
     transition: all 0.3s ease-in-out;
 
@@ -31,7 +36,7 @@
         }
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 920px) {
         width: 100%;
     }
 
@@ -54,10 +59,12 @@
     align-items: flex-start;
 
     p {
-        font-size: 1.25rem;
-        line-height: 2rem;
-        color: var(--black-color);
+        font-size: 1rem;
+        line-height: 1.4rem;
+        color: var(--light-color);
         font-family: var(--font-base);
+        letter-spacing: 0.06rem;
+        font-weight: 300;
 
         @media screen and (max-width: 450px) {
             font-size: 0.85rem;
@@ -68,14 +75,16 @@
 
     h4 {
         font-weight: 600;
-        color: var(--secondary-color);
+        color: var(--light-blue);
         margin-top: 2rem;
+        letter-spacing: 0.05rem;
     }
 
     h5 {
         font-weight: 400;
-        color: var(--gray-color);
+        color: var(--light-color);
         margin-top: 5px;
+        letter-spacing: 0.05rem;
     }
 }
 
@@ -143,17 +152,5 @@
 
     @media screen and (max-width: 800px) {
         width: 100%;
-    }
-}
-
-.app__testimonial-head {
-    background: -webkit-linear-gradient(30deg, #12c2e9, #c471ed, #f64f59, rgb(199, 219, 14));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 5rem;
-    margin-bottom: 5rem;
-
-    @media screen and (max-width: 450px) {
-        font-size: 1.5rem;
     }
 }

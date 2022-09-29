@@ -245,7 +245,7 @@
 }
 
 .app__header-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: left;
     color: var(--light-color);
     line-height: 1.5;
@@ -254,5 +254,9 @@
 
     @media screen and (min-width: 2000px) {
         font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 0.8rem;
     }
 }
