@@ -60,7 +60,7 @@ const Work = () => {
             animate={animateCard}
             transition={{duration: 0.5, delayChildren:0.5}}
             className="app__work-portfolio"
-            whileHover={{scale: 1.04}}
+            // whileHover={{scale: 1.04}}
         >
             {filterWork.map((work, index) => (
                 <div className='app__work-item app__flex' key={index}>
