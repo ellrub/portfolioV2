@@ -5,16 +5,16 @@ import {FaFacebookF, FaDiscord} from "react-icons/fa"
 const SocialMedia = () => {
     return (
     <div className='app__social'>
-        <div>
+        <div className='app__social--icon'>
             <BsLinkedin />
         </div>
-        <div>
+        <div className='app__social--icon'>
             <BsGithub />
         </div>
-        <div>
+        <div className='app__social--icon'>
             <FaFacebookF />
         </div>
-        <div>
+        <div className='app__social--icon'>
             <FaDiscord />
         </div>
     </div>

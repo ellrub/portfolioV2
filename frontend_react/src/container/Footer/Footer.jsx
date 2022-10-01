@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {SocialMedia} from "../../components"
 
 import {images} from "../../constants"
 import {AppWrap, MotionWrap} from "../../wrapper"
@@ -52,7 +53,8 @@ const handleSubmit = () => {
     {!isFormSubmitted ? 
         <div className='app__footer-form app__flex'>
             <div className='app__flex'>
-                <input 
+                <input
+                    required=""
                     className='p-text' 
                     type="text" 
                     placeholder='Your Name' 
@@ -61,7 +63,8 @@ const handleSubmit = () => {
                     onChange={handleChangeInput}/>
             </div>
             <div className='app__flex'>
-                <input 
+                <input
+                    required=""
                     className='p-text' type="email" 
                     placeholder='Your Email' 
                     name='email' 
@@ -69,7 +72,8 @@ const handleSubmit = () => {
                     onChange={handleChangeInput}/>
             </div>
             <div>
-                <textarea 
+                <textarea
+                    required=""
                     className='p-text' 
                     placeholder='Your Message'
                     value={message}
@@ -86,6 +90,7 @@ const handleSubmit = () => {
         : <div>
             <h3 className='app__footer-sub'>Thank you for getting in touch</h3>
         </div>}
+        <SocialMedia />
     </>
 )
 }
