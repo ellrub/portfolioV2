@@ -62,16 +62,13 @@ const handleSubmit = () => {
                     id="name"
                     onChange={handleChangeInput}/>
                 <label htmlFor='name' className='app__footer--label'>Your Name</label>
-            {/* <div className="input-group">
-                    <input required="" type="text" name="text" autocomplete="off" class="input">
-                    <label class="user-label">First Name</label>
-                </div> */}
+
             </div>
             <div className='app__flex app__footer--inputs'>
                 <input
                     required
                     className='p-text app__footer--input' 
-                    type="email" 
+                    type="text" 
                     name='email' 
                     value={email} 
                     id="email"
