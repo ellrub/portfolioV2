@@ -96,22 +96,23 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: var(--white-color);
+        background-color: var(--secondarybg-color);
 
         margin: 1rem;
         transition: all 0.3s ease-in-out;
+        box-shadow: 0px 3px 3px #10111c;
 
         svg {
             width: 20px;
             height: 20px;
-            color: var(--secondary-color);
+            color: var(--white-color);
         }
 
         &:hover {
-            background-color: var(--secondarybg-color);
+            background-color: var(--white-color);
             
             svg {
-                color: var(--white-color);
+                color: var(--secondarybg-color);
             }
         }
     }

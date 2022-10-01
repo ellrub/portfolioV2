@@ -52,34 +52,42 @@ const handleSubmit = () => {
 
     {!isFormSubmitted ? 
         <div className='app__footer-form app__flex'>
-            <div className='app__flex'>
+            <div className='app__flex app__footer--inputs'>
                 <input
-                    required=""
-                    className='p-text' 
-                    type="text" 
-                    placeholder='Your Name' 
+                    required
+                    className='p-text app__footer--input' 
+                    type="text"  
                     name='name' 
                     value={name} 
+                    id="name"
                     onChange={handleChangeInput}/>
+                <label htmlFor='name' className='app__footer--label'>Your Name</label>
+            {/* <div className="input-group">
+                    <input required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">First Name</label>
+                </div> */}
             </div>
-            <div className='app__flex'>
+            <div className='app__flex app__footer--inputs'>
                 <input
-                    required=""
-                    className='p-text' type="email" 
-                    placeholder='Your Email' 
+                    required
+                    className='p-text app__footer--input' 
+                    type="email" 
                     name='email' 
                     value={email} 
+                    id="email"
                     onChange={handleChangeInput}/>
+                <label htmlFor='email' className='app__footer--label'>Your Email</label>
             </div>
-            <div>
+            <div className='app__footer--inputs'>
                 <textarea
-                    required=""
-                    className='p-text' 
-                    placeholder='Your Message'
+                    required
+                    className='p-text app__footer--input' 
                     value={message}
                     name="message"
+                    id="message"
                     onChange={handleChangeInput}
                 />
+                <label htmlFor='message' className='app__footer--label'>Your Message</label>
             </div>
             <button 
                 type="button" 
@@ -100,3 +108,4 @@ export default AppWrap (
     "contact",
     "app__whitebg"
 )
+

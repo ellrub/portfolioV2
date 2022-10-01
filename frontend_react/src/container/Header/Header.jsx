@@ -46,7 +46,7 @@ const Header = () => {
                 whileInView={{scale: [0, 1]}}
                 transition={{duration: 1, ease: "easeInOut"}}
                 src={images.blob}
-                alt="profile_circle"
+                alt="profile_blob"
                 className='overlay_circle'
             />
         </motion.div>

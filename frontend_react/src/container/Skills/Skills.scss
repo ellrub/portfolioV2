@@ -24,7 +24,7 @@
     justify-content: center;    /*<--- Change to flex-start when adding experience*/
     align-items: center;        /*<--- Change to flex-start when adding experience*/
 
-    margin-right: 5rem;
+    // margin-right: 5rem;      /*<--- Turn this on when adding experience*/
 
     @media screen and (max-width: 900px) {
         margin-right: 0;
@@ -52,18 +52,13 @@
         height: 90px;
         border-radius: 0.5rem;
         background: #383d5b;
-        box-shadow: 8px 8px 9px #25283c,
-                    -8px -8px 9px #4b527a;
+        box-shadow: inset 8px 8px 9px #25283c,
+                    inset -8px -8px 9px #4b527a;
         transition: all 0.3s ease-in-out;
 
         img {
             width: 50%;
             height: 50%;
-        }
-
-        &:hover {
-            box-shadow: inset 8px 8px 9px #25283c,
-                        inset -8px -8px 9px #4b527a;
         }
 
         @media screen and (min-width: 2000px) {
