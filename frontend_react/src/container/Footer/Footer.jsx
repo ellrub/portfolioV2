@@ -87,7 +87,7 @@ const handleSubmit = () => {
                 <label htmlFor='message' className='app__footer--label'>Your Message</label>
             </div>
             <button 
-                type="button" 
+                type="submit" 
                 className='p-text' 
                 onClick={handleSubmit}
             >{loading ? "Sending" : "Send Message"}</button>
