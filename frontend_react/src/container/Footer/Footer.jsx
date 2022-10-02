@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {SocialMedia} from "../../components"
+import {useForm} from "react-hook-form"
 
 import {images} from "../../constants"
 import {AppWrap, MotionWrap} from "../../wrapper"
@@ -10,6 +11,7 @@ const Footer = () => {
 const [formData, setFormData] = useState({name: "", email: "", message: ""})
 const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 const [loading, setLoading] = useState(false)
+
 
 const {name, email, message} = formData;
 
@@ -51,10 +53,10 @@ const handleSubmit = () => {
         </div>
 
     {!isFormSubmitted ? 
-        <div className='app__footer-form app__flex'>
+        <form className='app__footer-form app__flex'>
             <div className='app__flex app__footer--inputs'>
                 <input
-                    required
+                    required=""
                     className='p-text app__footer--input' 
                     type="text"  
                     name='name' 
@@ -66,7 +68,7 @@ const handleSubmit = () => {
             </div>
             <div className='app__flex app__footer--inputs'>
                 <input
-                    required
+                    required=""
                     className='p-text app__footer--input' 
                     type="text" 
                     name='email' 
@@ -77,7 +79,7 @@ const handleSubmit = () => {
             </div>
             <div className='app__footer--inputs'>
                 <textarea
-                    required
+                    required=""
                     className='p-text app__footer--input' 
                     value={message}
                     name="message"
@@ -87,11 +89,11 @@ const handleSubmit = () => {
                 <label htmlFor='message' className='app__footer--label'>Your Message</label>
             </div>
             <button 
-                type="submit" 
+                type="button" 
                 className='p-text' 
                 onClick={handleSubmit}
             >{loading ? "Sending" : "Send Message"}</button>
-        </div>
+        </form>
         : <div>
             <h3 className='app__footer-sub'>Thank you for getting in touch</h3>
         </div>}
