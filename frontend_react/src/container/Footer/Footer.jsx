@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import {SocialMedia} from "../../components"
-import {useForm} from "react-hook-form"
 
 import {images} from "../../constants"
 import {AppWrap, MotionWrap} from "../../wrapper"
@@ -56,7 +55,7 @@ const handleSubmit = () => {
         <form className='app__footer-form app__flex'>
             <div className='app__flex app__footer--inputs'>
                 <input
-                    required=""
+                    required
                     className='p-text app__footer--input' 
                     type="text"  
                     name='name' 
@@ -68,7 +67,7 @@ const handleSubmit = () => {
             </div>
             <div className='app__flex app__footer--inputs'>
                 <input
-                    required=""
+                    required
                     className='p-text app__footer--input' 
                     type="text" 
                     name='email' 
@@ -79,7 +78,7 @@ const handleSubmit = () => {
             </div>
             <div className='app__footer--inputs'>
                 <textarea
-                    required=""
+                    required
                     className='p-text app__footer--input' 
                     value={message}
                     name="message"
