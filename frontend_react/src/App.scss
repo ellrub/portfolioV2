@@ -108,13 +108,19 @@
 
     .app__social--icon {
         margin: 0 0.5rem;
+        cursor: pointer;
+
+        a {
+            position: relative;
+            top: 3px;
+        }
     }
 
     div {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: var(--light-color);
+        background-color: var(--primarybg-color);
         margin: 0.35rem 0;
         border: none;
 
@@ -127,11 +133,11 @@
     svg {
         width: 25px;
         height: 25px;
-        color: var(--primarybg-color);
+        color: var(--light-color);
     }
 
         &:hover {
-            background-color: var(--hover-gray);
+            background-color: var(--primarybg-color);
             border-color: var(--hover-gray);
             transform: translateY(-0.25rem);
             box-shadow: 0px 3px 2px var(--light-color);
