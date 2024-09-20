@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/plugin-transform-optional-chaining": "^7.23.3",
+    "@babel/plugin-transform-class-properties": "^7.25.4",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
+    "@babel/plugin-transform-numeric-separator": "^7.24.7",
+    "@babel/plugin-transform-optional-chaining": "^7.24.8",
+    "@babel/plugin-transform-private-methods": "^7.25.4",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
+    "@npmcli/fs": "^3.1.1",
+    "@rollup/plugin-terser": "^0.4.4",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
     "framer-motion": "^7.3.6",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
@@ -17,7 +25,10 @@
     "react-icons": "^4.4.0",
     "react-scripts": "^5.0.1",
     "react-tooltip": "^4.2.21",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "svgo": "^3.3.2",
+    "uuid": "^10.0.0",
+    "workbox-background-sync": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
