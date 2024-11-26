@@ -12,7 +12,7 @@ const [toggle, setToggle] = useState(false)
         <div className='app__navbar-logo'>
             <i className="fa-solid fa-r"></i>
             <i className="fa-solid fa-circle"></i>
-            <i className="fa-solid fa-e"></i>
+            <i className="fa-solid fa-n"></i>
         </div>
         <ul className='app__navbar-links'>
             {["home", "about", "projects", "skills", "contact"].map((item) => (
